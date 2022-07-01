@@ -19,16 +19,16 @@ function setTime() {
     let s = date.getSeconds()
     
     if(h < 12 && h > 5) {
-        greeting.innerHTML = "Good Morning!"
+        greeting.innerHTML = "Guten Morgen, Philip!"
         classToggle(sun, moon)
     } else if(h < 18) {
-        greeting.innerHTML = "Good Afternoon!"
+        greeting.innerHTML = "Guten Tag, Philip!"
         classToggle(sun, moon)
     } else if(h <= 23) {
-        greeting.innerHTML = "Good Evening!"
+        greeting.innerHTML = "Guten Abend, Philip!"
         classToggle(moon, sun)
     } else {
-        gretting.innerHTML = "Good Night!"
+        gretting.innerHTML = "Gute Nacht, Philip!"
         classToggle(moon, sun)
     }
     hour.innerHTML = (h < 10) ? "0" + h : h
