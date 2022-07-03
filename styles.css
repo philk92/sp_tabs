@@ -4,8 +4,8 @@ html, body, * {
     font-family: "Mononoki NF"
 }
 body {
-    background-color: #0B121E;
-    color: #fff;
+    background-color: #282a36;
+    color: #f8f8f2;
 }
 #container {
     margin: 120px auto 0;
@@ -13,8 +13,10 @@ body {
 }
 #greeting {
     margin-top: 20px;
-    font-size: 24px;
+    font-size: 20px;
+    margin-bottom: 3px;
 }
+
 #sun-icon, #moon-icon {
     display: none;
 }
@@ -22,13 +24,18 @@ body {
     display: block;
 }
 #time {
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 300;
 }
 #hour, #minute, #second {
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 5px;
     width: 70px;
+}
+#dp {
+    position: relative;
+    font-size: 40px;
+    bottom: 10px;
 }
 #search {
     width: 100%;
@@ -47,7 +54,7 @@ body {
     border-bottom: 1px solid #343947;
 }
 #search:focus, #search:active {
-    border-bottom: 1px solid #E8DE89;
+    border-bottom: 1px solid #f1fa8c;
 }
 #search::placeholder {
     font-style: italic;
@@ -60,23 +67,24 @@ body {
 #bookmarks a:visited,
 #bookmarks a:active {
     display: block;
-    color: #788496;
+    /* color text links */
+    color: #dfdfda;
     padding: 5px 10px;
     line-height: 30px;
     font-size: 15px;
-    background-color: #0F1929;
+    background-color: #44475a;
     text-decoration: none;
     transition: background-color .5s ease, color .5s ease;
     margin-bottom: 5px;
 }
 #bookmarks a:hover {
-    color: #E8DE89;
+    color: #f1fa8c;
     background-color: #142033;
 }
 #bookmarks h2 {
     font-size: 15px;
     text-transform: uppercase;
-    border-bottom: 1px solid #48BDE1;
+    border-bottom: 1px solid #bd93f9;
     line-height: 0px;
     margin: 40px 0 20px;
 }
@@ -93,8 +101,21 @@ body {
     width: calc(25% - 5px);
     margin-bottom: 0;
 }
+#bookmarks .half {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap:5px;
+}
+#bookmarks .half a,
+#bookmarks .half a:visited,
+#bookmarks .half a:active {
+    display: block;
+    width: calc(50% - 5px);
+    margin-bottom: 0;
+}
 #bookmarks h2 span {
-    background-color: #0B121E;
+    background-color: #282a36;
     padding-right: 10px;
 }
 .center { text-align: center; }
