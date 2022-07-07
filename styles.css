@@ -4,11 +4,11 @@ html, body, * {
     font-family: "Mononoki NF"
 }
 body {
-    background-color: #282a36;
-    color: #f8f8f2;
+    background-color: #1a1b26;
+    color: #a9b1d6;
 }
 #container {
-    margin: 120px auto 0;
+    margin: 80px auto 0;
     width: 580px;
 }
 #greeting {
@@ -68,23 +68,23 @@ body {
 #bookmarks a:active {
     display: block;
     /* color text links */
-    color: #dfdfda;
+    color: #cfc9c2;
     padding: 5px 10px;
     line-height: 30px;
     font-size: 15px;
-    background-color: #44475a;
+    background-color: #24283b;
     text-decoration: none;
     transition: background-color .5s ease, color .5s ease;
     margin-bottom: 5px;
 }
 #bookmarks a:hover {
-    color: #f1fa8c;
-    background-color: #142033;
+    color: #e0af68;
+    background-color: #414868;
 }
 #bookmarks h2 {
     font-size: 15px;
     text-transform: uppercase;
-    border-bottom: 1px solid #bd93f9;
+    border-bottom: 1px solid #f7768e;
     line-height: 0px;
     margin: 40px 0 20px;
 }
@@ -129,7 +129,7 @@ body {
 }
 
 #bookmarks h2 span {
-    background-color: #282a36;
+    background-color: #1a1b26;
     padding-right: 10px;
 }
 .center { text-align: center; }
@@ -150,7 +150,7 @@ body {
 .stars {
     width: 3px;
     height: 3px;
-    background-color: #ECF0F1;
+    background-color: #cfc9c2;
     border-radius: 100px;
     position: absolute;
     opacity: 0;
