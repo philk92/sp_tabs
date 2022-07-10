@@ -1,6 +1,7 @@
 html, body, * { 
-    font-family: "Fira Sans", sans-serif;
+    font-family: "SF Pro", "Fira Sans", sans-serif;
     box-sizing: border-box; 
+    font-weight: 300;
     /* font-family: "Mononoki NF" */
 }
 body {
@@ -32,6 +33,7 @@ body {
     margin: 0 5px;
     width: 70px;
 }
+
 #dp {
     position: relative;
     font-size: 40px;
@@ -40,12 +42,10 @@ body {
 #search {
     width: 100%;
     background-color: #0B121E;
-    outline: none;
+     outline: none;
     border: none;
-    border-bottom: 1px solid #272B37;
-    margin-top: 20px;
-    font-size: 25px;
-    color: #fff;
+    border-bottom: 1px solid #272B37; margin-top: 20px;
+    font-size: 25px;    color: #fff;
     font-weight: 200;
     padding: 10px 0;
     transition: border-bottom .3s ease;
@@ -66,9 +66,9 @@ body {
 #bookmarks a,
 #bookmarks a:visited,
 #bookmarks a:active {
-    display: block;
+             display: block;
     /* color text links */
-    color: #cfc9c2;
+    color: #989fc1;
     padding: 5px 10px;
     line-height: 30px;
     font-size: 15px;
