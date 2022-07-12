@@ -1,79 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,300;1,200;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <title>Welcome</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,300;1,200;1,300&display=swap"
-    rel="stylesheet">
-  <link href="styles.css" rel="stylesheet">
-  <title>Welcome</title>
-</head>
-
-<body>
-  <div id="container">
-    <div id="sun-icon" class="timecon">
-      <div class="img-container"><img class="sun-center" src="i/sun.svg"></div>
-      <div class="img-container"><img class="sunrays" src="i/sunrays.svg"></div>
+  <body>
+    <div id="container">
+      <div id="sun-icon" class="timecon">
+        <div class="img-container">
+          <img class="sun-center" src="i/sun.svg" />
+        </div>
+        <div class="img-container">
+          <img class="sunrays" src="i/sunrays.svg" />
+        </div>
+      </div>
+      <div id="moon-icon" class="timecon">
+        <div class="img-container"><img class="moon" src="i/moon.svg" /></div>
+        <div class="stars star-one"></div>
+        <div class="stars star-two"></div>
+        <div class="stars star-three"></div>
+        <div class="stars star-four"></div>
+      </div>
+      <div id="greeting" class="center"></div>
+      <div id="time" class="center">
+        <span id="hour" class="center"></span><span id="dp">:</span
+        ><span id="minute" class="center"></span><span id="dp">:</span
+        ><span id="second" class="center"></span>
+      </div>
+      <!-- <form action="javascript:search()"> -->
+      <!--     <input id="search" type="text" placeholder="Auf DuckDuckGo suchen ..."> -->
+      <!-- </form> -->
+      <div id="bookmarks">
+        <h2><span>Favoriten</span></h2>
+        <div class="">
+          <a href="https://www.github.com/philk92">Github philk92</a>
+          <a href="https://192.168.178.123/apps/files/"
+            >Dokumente / Nextcloud</a
+          >
+        </div>
+        <div></div>
+        <h2><span>Soziales und Nachrichten</span></h2>
+        <div class="third">
+          <a href="https://www.fastmail.com/mail/Eingang/">Fastmail</a>
+          <a href="https://mail.google.com">Gmail</a>
+          <a href="https://www.twitter.com">Twitter</a>
+          <a href="https://web.telegram.org">Telegram</a>
+          <a href="https://web.whatsapp.com">WhatsApp</a>
+          <a href="https://www.twitch.tv">Twitch</a>
+          <a href="https://www.youtube.com">Youtube</a>
+          <a href="http://blog.fefe.de">Fefe</a>
+          <a href="https://www.bild.de">Bild</a>
+        </div>
+        <h2><span>Reddit</span></h2>
+        <div class="tiled">
+          <a href="https://www.reddit.com/r/hydrohomies">/r/hydrohomies</a>
+          <a href="https://www.reddit.com/r/unixporn">/r/unixporn</a>
+          <a href="https://www.reddit.com/r/design">/r/design</a>
+          <a href="https://www.reddit.com/r/qtile">/r/qtile</a>
+          <a href="https://www.reddit.com/r/python">/r/python</a>
+          <a href="https://www.reddit.com/r/startpages">/r/startpages</a>
+          <a href="https://www.reddit.com/r/mechanicalkeyboards">/r/mk</a>
+          <a href="https://www.reddit.com/r/webdev">/r/webdev</a>
+        </div>
+        <h2><span>Coding</span></h2>
+        <div class="half">
+          <a href="https://www.udemy.com/home/my-courses/learning/"
+            >Udemy Learnings</a
+          >
+          <a href="https://www.stackoverflow.com">Stack Overflow</a>
+          <a href="https://draculatheme.com/contribute">Dracula Color Theme</a>
+          <a href="https://github.com/enkia/tokyo-night-vscode-theme"
+            >Tokyo Night Color Theme</a
+          >
+          <a href="https://www.theodinproject.com/dashboard"
+            >The Odin Project</a
+          >
+          <a href="https://www.freecodecamp.org/">FreeCodeCamp</a>
+        </div>
+      </div>
     </div>
-    <div id="moon-icon" class="timecon">
-      <div class="img-container"><img class="moon" src="i/moon.svg"></div>
-      <div class="stars star-one"></div>
-      <div class="stars star-two"></div>
-      <div class="stars star-three"></div>
-      <div class="stars star-four"></div>
-    </div>
-    <div id="greeting" class="center"></div>
-    <div id="time" class="center">
-      <span id="hour" class="center"></span><span id="dp">:</span><span id="minute" class="center"></span><span
-        id="dp">:</span><span id="second" class="center"></span>
-    </div>
-    <!-- <form action="javascript:search()"> -->
-    <!--     <input id="search" type="text" placeholder="Auf DuckDuckGo suchen ..."> -->
-    <!-- </form> -->
-    <div id="bookmarks">
-      <h2><span>Favoriten</span></h2>
-      <div class="">
-        <a href="https://www.github.com/philk92">Github philk92</a>
-        <a href="https://192.168.178.123/apps/files/">Dokumente / Nextcloud</a>
-      </div>
-      <div>
-      </div>
-      <h2><span>Soziales und Nachrichten</span></h2>
-      <div class="third">
-        <a href="https://www.fastmail.com/mail/Eingang/">Fastmail</a>
-        <a href="https://mail.google.com">Gmail</a>
-        <a href="https://www.twitter.com">Twitter</a>
-        <a href="https://web.telegram.org">Telegram</a>
-        <a href="https://web.whatsapp.com">WhatsApp</a>
-        <a href="https://www.twitch.tv">Twitch</a>
-        <a href="https://www.youtube.com">Youtube</a>
-        <a href="http://blog.fefe.de">Fefe</a>
-        <a href="https://www.bild.de">Bild</a>
-      </div>
-      <h2><span>Reddit</span></h2>
-      <div class="tiled">
-        <a href="https://www.reddit.com/r/hydrohomies">/r/hydrohomies</a>
-        <a href="https://www.reddit.com/r/unixporn">/r/unixporn</a>
-        <a href="https://www.reddit.com/r/design">/r/design</a>
-        <a href="https://www.reddit.com/r/qtile">/r/qtile</a>
-        <a href="https://www.reddit.com/r/python">/r/python</a>
-        <a href="https://www.reddit.com/r/startpages">/r/startpages</a>
-        <a href="https://www.reddit.com/r/mechanicalkeyboards">/r/mk</a>
-        <a href="https://www.reddit.com/r/webdev">/r/webdev</a>
-      </div>
-      <h2><span>Coding</span></h2>
-      <div class="half">
-      <a href="https://www.udemy.com/home/my-courses/learning/">Udemy Learnings</a>
-      <a href="https://www.stackoverflow.com">Stack Overflow</a>
-      <a href="https://draculatheme.com/contribute">Dracula Color Theme</a>
-      <a href="https://github.com/enkia/tokyo-night-vscode-theme">Tokyo Night Color Theme</a>
-      </div>
-
-    </div>
-  </div>
-  <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
