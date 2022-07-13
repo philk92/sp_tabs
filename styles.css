@@ -1,189 +1,211 @@
-html, body, * { 
-    font-family: "Fira Sans", sans-serif;
-    box-sizing: border-box; 
-    font-weight: 300;
-    /* font-family: "Mononoki NF" */
-}
-body {
-    background-color: #1a1b26;
-    color: #a9b1d6;
-}
-#container {
-    margin: 80px auto 0;
-    width: 580px;
-}
-#greeting {
-    margin-top: 20px;
-    font-size: 20px;
-    margin-bottom: 3px;
+:root {
+  --main-bg-color: #1a1b26;
 }
 
-#sun-icon, #moon-icon {
-    display: none;
+html,
+body,
+* {
+  font-family: "Fira Sans", sans-serif;
+  box-sizing: border-box;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
 }
-#sun-icon.active, #moon-icon.active {
-    display: block;
+body {
+  background-color: var(--main-bg-color);
+  color: #a9b1d6;
+}
+#container {
+  margin: 80px auto 0;
+  width: 580px;
+}
+#greeting {
+  margin-top: 20px;
+  font-size: 20px;
+  margin-bottom: 3px;
+}
+
+#sun-icon,
+#moon-icon {
+  display: none;
+}
+#sun-icon.active,
+#moon-icon.active {
+  display: block;
 }
 #time {
-    font-size: 60px;
-    font-weight: 300;
+  font-size: 60px;
+  font-weight: 300;
 }
-#hour, #minute, #second {
-    display: inline-block;
-    margin: 0 5px;
-    width: 70px;
+#hour,
+#minute,
+#second {
+  display: inline-block;
+  margin: 0 5px;
+  width: 70px;
 }
 
 #dp {
-    position: relative;
-    font-size: 40px;
-    bottom: 10px;
+  position: relative;
+  font-size: 40px;
+  bottom: 10px;
 }
 #search {
-    width: 100%;
-    background-color: #0B121E;
-     outline: none;
-    border: none;
-    border-bottom: 1px solid #272B37; margin-top: 20px;
-    font-size: 25px;    color: #fff;
-    font-weight: 200;
-    padding: 10px 0;
-    transition: border-bottom .3s ease;
+  width: 100%;
+  background-color: #0b121e;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #272b37;
+  margin-top: 20px;
+  font-size: 25px;
+  color: #fff;
+  font-weight: 200;
+  padding: 10px 0;
+  transition: border-bottom 0.3s ease;
 }
 #search:hover {
-    border-bottom: 1px solid #343947;
+  border-bottom: 1px solid #343947;
 }
-#search:focus, #search:active {
-    border-bottom: 1px solid #f1fa8c;
+#search:focus,
+#search:active {
+  border-bottom: 1px solid #f1fa8c;
 }
 #search::placeholder {
-    font-style: italic;
-    color: #4c5066;
+  font-style: italic;
+  color: #4c5066;
 }
 #bookmarks {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 #bookmarks a,
 #bookmarks a:visited,
 #bookmarks a:active {
-             display: block;
-    /* color text links */
-    color: #989fc1;
-    padding: 5px 10px;
-    line-height: 30px;
-    font-size: 15px;
-    background-color: #24283b;
-    text-decoration: none;
-    transition: background-color .5s ease, color .5s ease;
-    margin-bottom: 5px;
+  display: block;
+  /* color text links */
+  color: #989fc1;
+  padding: 5px 10px;
+  line-height: 30px;
+  font-size: 15px;
+  background-color: #24283b;
+  text-decoration: none;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  margin-bottom: 5px;
 }
 #bookmarks a:hover {
-    color: #e0af68;
-    background-color: #414868;
+  color: #e0af68;
+  background-color: #414868;
 }
 #bookmarks h2 {
-    font-size: 15px;
-    text-transform: uppercase;
-    border-bottom: 1px solid #f7768e;
-    line-height: 0px;
-    margin: 40px 0 20px;
+  font-size: 15px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #f7768e;
+  line-height: 0px;
+  margin: 40px 0 20px;
 }
 #bookmarks .tiled {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap:5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 5px;
 }
 #bookmarks .tiled a,
 #bookmarks .tiled a:visited,
 #bookmarks .tiled a:active {
-    display: block;
-    width: calc(25% - 5px);
-    margin-bottom: 0;
+  display: block;
+  width: calc(25% - 5px);
+  margin-bottom: 0;
 }
 #bookmarks .half {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap:5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 5px;
 }
 #bookmarks .half a,
 #bookmarks .half a:visited,
 #bookmarks .half a:active {
-    display: block;
-    width: calc(50% - 5px);
-    margin-bottom: 0;
+  display: block;
+  width: calc(50% - 5px);
+  margin-bottom: 0;
 }
 #bookmarks .third {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap:5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 5px;
 }
 #bookmarks .third a,
 #bookmarks .third a:visited,
 #bookmarks .third a:active {
-    display: block;
-    width: calc(33% - 5px);
-    margin-bottom: 0;
+  display: block;
+  width: calc(33% - 5px);
+  margin-bottom: 0;
 }
 
 #bookmarks h2 span {
-    background-color: #1a1b26;
-    padding-right: 10px;
+  background-color: #1a1b26;
+  padding-right: 10px;
 }
-.center { text-align: center; }
+.center {
+  text-align: center;
+}
 .timecon {
-    position: relative;
-    width: 80px;
-    height: 80px;
-    margin: 0 auto;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
 }
 .img-container img {
-    position: absolute;
-    width: 80px;
-    height: 80px;
+  position: absolute;
+  width: 80px;
+  height: 80px;
 }
 .sunrays {
-    animation: rotation 40s infinite linear;
+  animation: rotation 40s infinite linear;
 }
 .stars {
-    width: 3px;
-    height: 3px;
-    background-color: #cfc9c2;
-    border-radius: 100px;
-    position: absolute;
-    opacity: 0;
-    animation: stars 10s infinite ease-in-out;
+  width: 3px;
+  height: 3px;
+  background-color: #cfc9c2;
+  border-radius: 100px;
+  position: absolute;
+  opacity: 0;
+  animation: stars 10s infinite ease-in-out;
 }
 .star-one {
-    top: 20px;
-    right: 20px;
-    animation-delay: 3s;
+  top: 20px;
+  right: 20px;
+  animation-delay: 3s;
 }
 .star-two {
-    top: 40px;
-    right: 5px;
-    animation-delay: 6s;
+  top: 40px;
+  right: 5px;
+  animation-delay: 6s;
 }
 .star-three {
-    top: 15px;
+  top: 15px;
 }
 .star-four {
-    bottom: 10px;
-    left: 10px;
-    animation-delay: 9s;
+  bottom: 10px;
+  left: 10px;
+  animation-delay: 9s;
 }
 @keyframes stars {
-    0%  { opacity: 0%; }
-    50% { opacity: 100%; }
-    0%  { opacity: 0%; }
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  0% {
+    opacity: 0%;
+  }
 }
 @keyframes rotation {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(359deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
